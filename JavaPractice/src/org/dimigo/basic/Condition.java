@@ -6,7 +6,7 @@ public class Condition {
 		/* 1. 기본요금 - 고속버스 : 850원, 경차 : 300원 , 그외 600원
 		 * 2. 10km 초과 시 마다 고속버스는 300원씩 추가, 경차와 그 외는 200원 씩 추가
 		 */
-		int distance = 30;
+		int distance = 0;
 		String car = "고속버스";
 		int pay =0;
 		int which = 0;
@@ -22,7 +22,9 @@ public class Condition {
 			which+=3;//그 외
 		}
 		if(which == 1){
-			pay = 850;
+			pay = (distance-1)/10*300 + 850;
+			/*pay = 850;
+			
 			if(distance >= 0 && distance <= 10){
 				pay+=0;
 			}else if(distance <= 20){
@@ -34,7 +36,7 @@ public class Condition {
 				}
 				else
 					pay +=(int)(distance / 10)*300;
-			}
+			}*/
 		}else if(which ==2){
 			pay = 300;
 			if(distance >= 0 && distance <= 10){
@@ -44,10 +46,10 @@ public class Condition {
 			}
 			else {
 				if(distance % 10 == 0){
-				pay +=(int)(distance / 10)*300-300;	
+				pay +=(int)(distance / 10)*200-200;	
 			}
 			else
-				pay +=(int)(distance / 10)*300;
+				pay +=(int)(distance / 10)*200;
 			}	
 		}else{
 			pay = 600;
@@ -58,10 +60,10 @@ public class Condition {
 			}
 			else {
 				if(distance % 10 == 0){
-					pay +=(int)(distance / 10)*300-300;	
+					pay +=(int)(distance / 10)*200-200;	
 				}
 				else
-					pay +=(int)(distance / 10)*300;
+					pay +=(int)(distance / 10)*200;
 			}
 		}
 		
