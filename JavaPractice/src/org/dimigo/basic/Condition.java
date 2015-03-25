@@ -1,11 +1,13 @@
-package org.dimigo.basic;
+package org.dimigo.basic;  
 
 public class Condition {
 
 	public static void main(String[] args) {
-		// 고속버스: 850 경차: 300 그외 : 600 고속버스 300원  경차200원 추가
-		int distance = 21;
-		String car = "경차";
+		/* 1. 기본요금 - 고속버스 : 850원, 경차 : 300원 , 그외 600원
+		 * 2. 10km 초과 시 마다 고속버스는 300원씩 추가, 경차와 그 외는 200원 씩 추가
+		 */
+		int distance = 30;
+		String car = "고속버스";
 		int pay =0;
 		int which = 0;
 		
@@ -27,7 +29,11 @@ public class Condition {
 				pay+=300;
 			}
 			else {
-				pay +=(int)(distance / 10)*300;
+				if(distance % 10 == 0){
+					pay +=(int)(distance / 10)*300-300;	
+				}
+				else
+					pay +=(int)(distance / 10)*300;
 			}
 		}else if(which ==2){
 			pay = 300;
@@ -37,7 +43,11 @@ public class Condition {
 				pay+=200;
 			}
 			else {
-				pay += (int)(distance / 10)*200;
+				if(distance % 10 == 0){
+				pay +=(int)(distance / 10)*300-300;	
+			}
+			else
+				pay +=(int)(distance / 10)*300;
 			}	
 		}else{
 			pay = 600;
@@ -47,7 +57,11 @@ public class Condition {
 				pay+=200;
 			}
 			else {
-				pay += (int)(distance / 10)*200;
+				if(distance % 10 == 0){
+					pay +=(int)(distance / 10)*300-300;	
+				}
+				else
+					pay +=(int)(distance / 10)*300;
 			}
 		}
 		
