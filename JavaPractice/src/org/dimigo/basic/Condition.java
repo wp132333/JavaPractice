@@ -6,7 +6,7 @@ public class Condition {
 		/* 1. 기본요금 - 고속버스 : 850원, 경차 : 300원 , 그외 600원
 		 * 2. 10km 초과 시 마다 고속버스는 300원씩 추가, 경차와 그 외는 200원 씩 추가
 		 */
-		int distance = 0;
+		int distance = 100;
 		String car = "고속버스";
 		int pay =0;
 		int which = 0;
