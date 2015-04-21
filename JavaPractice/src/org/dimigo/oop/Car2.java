@@ -20,7 +20,7 @@ public class Car2 {
 	private String company;
 	private String model;
 	private String color; 
-	private int maxSpeed;
+	private int maxSpeed; 
 	private int price;
 	
 	public Car2(){

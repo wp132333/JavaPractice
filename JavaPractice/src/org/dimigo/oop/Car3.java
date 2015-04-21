@@ -19,7 +19,7 @@ package org.dimigo.oop;
 public class Car3 {
 	private String company;
 	private String model;
-	private String color;
+	private String color; 
 	private int maxSpeed;
 	private int price;
 	
