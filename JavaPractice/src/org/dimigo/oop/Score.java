@@ -40,19 +40,19 @@ public class Score {
 		System.out.println();
 		System.out.println();
 		sb.append("<< 점수 출력 >>\n")
-		.append("국어점수 출력 => ")
+		.append("국어점수 출력 : ")
 		.append(kor)
 		.append("점\n")
-		.append("수학점수 출력 => ")
+		.append("수학점수 출력 : ")
 		.append(mat)
 		.append("점\n")
-		.append("영어점수 출력 => ")
+		.append("영어점수 출력  : ")
 		.append(eng)
 		.append("점\n")
-		.append("총점 출력 => ")
+		.append("총점 출력 : ")
 		.append(kor+mat+eng)
 		.append("점\n")
-		.append("평균 출력 => ")
+		.append("평균 : ")
 		.append(String.format("%.1f", (kor+mat+eng)/3.0))
 		.append("점\n").toString();
 		System.out.println(sb);
