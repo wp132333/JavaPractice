@@ -54,8 +54,8 @@ public class Car3 {
 	public int getPrice() {
 		return price;
 	}
-	public void setCompany(String newCompany) {
-		company = newCompany;
+	public void setCompany(String company) {
+		this.company = company;
 	}
 	public void setModel(String newModel) {
 		model = newModel;
