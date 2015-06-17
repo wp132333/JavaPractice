@@ -31,12 +31,12 @@ public class IdolGroup {
 		};
 		for(int i =0; i < idolGroup.length; i++){
 			System.out.println("<< "+ idolGroup[i]+" 멤버 >>");
-			for(int j=0; j<members[i].length; j++){
-				System.out.println(members[i][j]);
-			}
+//			for(int j=0; j<members[i].length; j++){
+//				System.out.println(members[i][j]);
+//			}
+			for(String arr : members[i])
+				System.out.println(arr);
 		}
-		
-
 	}
 
 }
