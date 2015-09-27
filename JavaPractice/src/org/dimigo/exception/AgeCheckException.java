@@ -17,6 +17,10 @@ package org.dimigo.exception;
  * 
  */
 public class AgeCheckException extends Exception {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	public AgeCheckException() {
 	}
 	public AgeCheckException(Movie movie){
