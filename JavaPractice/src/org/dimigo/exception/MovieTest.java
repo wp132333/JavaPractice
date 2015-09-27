@@ -35,7 +35,7 @@ public class MovieTest {
 		if(age < movie.getLimitAge())
 			throw new AgeCheckException(movie); // error
 		else
-			System.out.println(movie.getTitle()+" 잘봐");
+			System.out.println(movie.getTitle()+" 영화 즐감하세요~~~");
 	}
 
 }
